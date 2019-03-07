@@ -292,31 +292,31 @@ input[type=submit]:active {
 }
 
 
-/* ----------- MEALS SECTION -------- */
+/* ----------- SECTION -------- */
 
-.section-meals {
+.sect-1 {
 	padding: 0; /* distnace between top and bottom */
 }
 
-.meals-showcase {
+.sect-showcase {
 	list-style: none;
 	width:100%;	
 }
 
-.meals-showcase li {
+.sect-showcase li {
 	display: block;
 	float: left;
 	width: 25%;
 }
 
-.meal-photo {
+.sect-photo {
 	width: 100%;
 	margin: 0;
 	overflow: hidden; /* prevents image from going larger than container */
 	background-color: #000; /* set background container to black so images look transparent*/
 }
 
-.meal-photo img {
+.sect-photo img {
 	opacity: 0.7; /*70% how to make background darker make sure to do background colour of container to black*/
 	width: 100%; /* make image as large as container, if not do image is cut off */
 	height: auto;
@@ -324,7 +324,7 @@ input[type=submit]:active {
 	transition: transform 0.5s, opacity 0.5s; /* make imaage look selected */
 }
 
-.meal-photo img:hover {
+.sect-photo img:hover {
 	opacity: 1;
 	transform: scale(1.04); /* makes image look selected */
 }
@@ -381,146 +381,6 @@ input[type=submit]:active {
 	height: 50px;
 	width: auto;
 	margin-right: 10px;
-}
-
-/* ----------- Cities -------- */
-
-.box img {
-	width: 200px;
-	height: auto;
-	margin-bottom: 15px;
-}
-
-.city-feature {
-	margin-bottom: 5px;
-}
-
-/* ----------- Testimonals -------- */
-
-.section-testimonials {
-	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/back-customers.jpg);
-	background-size: cover;
-	color: #fff;
-	background-attachment: fixed; /* image stays in same place as we scroll */
-}
-
-blockquote {
-	padding: 2%;
-	font-style: italic;
-	line-height: 145%;
-	position: relative;
-	margin-top: 40px;
-}
-
-cite {
-	font-size: 90%;
-	margin-top: 25px;
-	display: block; /* block creates a br */
-}
-
-blockquote:before {
-	content: "\201c"; /*get quote*/
-	font-size: 500%;
-	display: block;
-	position: absolute; /*need to move quote around require relative in parent*/
-	top: -5px;
-	left: -5px;
-}
-
-cite img {
-	height: 45px;
-	border-radius: 50%;
-	margin-right: 10px;
-	vertical-align: middle;
-}
-
-
-
-/* ----------- Sign Up -------- */
-
-.section-plans {
-	background-color: #f4f4f4;
-}
-
-.plan-box {
-	background-color: #fff;
-	border-radius: 5px;
-	width: 90%;
-	margin-left: 5%; /* half percent between 10% */
-	box-shadow: 0 2px 2px #efefef; /* x y blur colour*/
-}
-
-.plan-box div { /* get to define three div inside of plan-box*/
-	padding: 15px;
-	border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:first-child {
-	background-color: #fcfcfc;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child { /* make last box in alignment with rest not left to right but up and down*/
-	text-align: center;
-	border: 0;
-}
-
-.plan-price {
-	font-size: 300%;
-	margin-bottom: 10px;
-	font-weight: 100;
-	color: #e67e22;
-}
-
-
-.plan-price span { /* child of above*/
-	font-size: 30%; /* make month smaller*/
-	font-weight: 300;
-}
-
-.plan-price-meal {
-	font-size: 80%;
-}
-
-.plan-box ul {
-	list-style: none;	
-}
-
-.plan-box ul li {
-	padding: 5px 0;
-}
-
-
-/* ----------- Contact Form -------- */
-
-.contact-form {
-	width: 60%;
-	margin: 0 auto; /* center contact form in parent */
-}
-
-input [type=text],
-select [type=email], /*use type to specify so not all elements are impacted*/
-textarea {
-	width: 100%;
-	padding: 7px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-}
-
-textarea {
-	height: 100px;
-}
-
-input[type=checkbox] {
-	margin: 10px 5px 10px 0;
-}
-
-*:focus {outline: none;} /*get rid of borders*/
-
-.map {
-	width: 100%;
-	height: 500px;
 }
 
 
