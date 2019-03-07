@@ -98,11 +98,5 @@ $(document).ready(function () {  /*ensures code worked*/
     	}
     });
 
-    /*Maps*/ 
-    GMaps({
-  		div: '.map',
-  		lat: -12.043333,
-  		lng: -77.028333
-	});
 
 });
