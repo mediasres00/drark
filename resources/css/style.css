@@ -50,7 +50,7 @@ header {
 
 
 .logo {
-	height: 75px;
+	height: 125px;
 	width: auto;
 	float: left;
 	margin-top: 20px;	
@@ -573,7 +573,7 @@ footer {
 	font-size: 160%;
 }
 
-.ion-lgog-twitter,
+.ion-logo-twitter,
 .ion-logo-instagram,
 .ion-logo-flickr {
 	transition: color: 0.2s;
