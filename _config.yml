@@ -1,2 +1,4 @@
 #build settings
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-sitemap
