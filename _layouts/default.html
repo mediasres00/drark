@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">	 <!-- grid columns that is responsive-->
 		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">	 <!-- ionicons columns that is responsive-->
 		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	 <!-- animate columns that is responsive-->
-		<link rel="stylesheet" type="text/css" href="css/main.css"> <!-- .js all before css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css"> <!-- .js all before css -->
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css"> <!-- .queries files for resonsive webdesign -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css"> <!--font-->
 		<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
@@ -26,19 +26,7 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="row">
-					<img src="css/img/logo.png" alt-"Airplane logo" class="logo">
-					<img src="css/img/logo.png" alt-"Airplane logo" class="logo-black"> 
-					<ul class="main-nav js--main-nav">
-						<li><a href="#features">Data Analysis</a></li>
-						<li><a href="http://tavinderark.com/earthquake">Earthquake Data</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="{{ site.baseurl }}/about">About me</a></li>
-					</ul>
-				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> <!-- mobile menue -->
-				</div>
-			</nav>
+			{% include navigation.html %}
 			<div class="hero-text-box"> <!-- background image is in .css -->
 				<h1>Hello.  My name is Tavinder<br>and I love data.</h1>
 			</div>		
@@ -50,10 +38,10 @@
 			</div>
 		</section>
 
-	<!--    <h1>{{ page.title }}</h1>
+<!--	    <h1>{{ page.title }}</h1> -->
  		<section>
       		{{ content }}
-    	</section> -->
+    	</section> 
 
 		<footer>
 			<div class="row">
