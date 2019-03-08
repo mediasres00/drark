@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Stay Tuned
+coming soon
 
-<a href="{{ site.baseurl }}">Return Home</a>
-
+<a href="/">Return Home</a>
