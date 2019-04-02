@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">	 <!-- grid columns that is responsive-->
 		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">	 <!-- ionicons columns that is responsive-->
 		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	 <!-- animate columns that is responsive-->
-		<link rel="stylesheet" type="text/css" href="assets/css/styles_small.css"> <!-- .js all before css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css"> <!-- .js all before css -->
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css"> <!-- .queries files for resonsive webdesign -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css"> <!--font-->
 		<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
@@ -17,10 +17,15 @@
 
 
 		<title>Medias Res</title>
-        
+    
+		<meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+            
 	</head>
 	<body>
-		<header>
+		<header class="header2">
 			<nav>
 	<div class="row">
 		<img src="assets/css/img/logo.png" alt-"Airplane logo" class="logo">
@@ -36,26 +41,49 @@
 </nav>
 
 			<div class="hero-text-box"> <!-- background image is in .css -->
-				<h1></h1>
+				<h1>About Me</h1>
 			</div>
 		</header>
-		
- 		<section>
-      		<section class="section-features js--section-features">
+		<section class="section-features js--section-features" id="features"> <!-- this is an anchor with food delivery-->
+      		<section>
 <div>
 	<div class="row">
-		<div class="col span-1-of-1 box">
-			<p>Under Construction
-			</p>
+		<div class="col span-1-of-2 box">  
+			<figure class="aboutme-photo">
+				<img src="assets/images/office_layout.jpg" alt="office">
+			</figure>
 		</div>
+	<div class="col span-1-of-2 box">  	
+			<h3>I love numbers</h3>
+			<p>My vision is to provide academics and non-academics with theoretical, programming and interpretational support in understanding data.  This involves operationalize their question of interest, identifying the appropriate statistical analysis, conducting and interpreting analyses/findings.  I care about data integrity, statistical assumptions, and the inferences made from the results knowing full well the findings can lead to real ramifications in the world.<br><br>I am based in Vancouver, British Columbia, Canada.
+			</p>
+		</div>	
 	</div>
 </div>
 </section>
-
-
+<section>
+<div>	
+	<div class="row">
+		<div class="col span-1-of-2 box">  <!-- again using grid.css, add box so we can style-->
+			<h3>Tavinder K. Ark</h3>
+			<p>Data Scientist.<br><br>I obtained my PhD from the University of British Columbia in the Measurement, Evaluation and Research Methodology program, and my Masters in Science from McMaster University in Psychology with a specialization in human cognition and medical education.  I have had the privilege of teaching introductory statistics, reliability, validity, and Generalizability Theory to senior graduate students and professionals.  You only know something if you can teach it.  I recognizes the importance of being able to communicate complex statistical analyses in a way that everyone can understand. <br><br>I have over 10+ years of experience in a wide range of areas, with a focus on medical education, outcomes and health research.  My love for numbers and modelling techniques gets me up in the morning, always looking for new ways to apply my knowledge in helping those who appreciate statistics and require a helping hand.  I not only bring strong analytic skills to any project, but humour as well knowing one learns and works best when everyone is smiling.
+			</p>
+		</div>	
+	<div class="col span-1-of-2 box">  <!-- again using grid.css, add box so we can style-->
+			<figure class="aboutme-photo">
+				<img src="assets/images/tka.jpg" alt="Tavinder K. Ark">
+			</figure>
+		</div>		
+	</div>
+<section>
+	<div class="row">
+		<p>Contact me if you have any questions</p>
+	</div>
+</section>	
+</div>
+</section>
     	</section> 
-
-		<footer>
+	<footer>
 	<div class="row">
 		<div class="col span-1-of-2">
 			<ul class="footer-nav">
@@ -79,22 +107,10 @@
 	</div>
 </footer>
 
-
 	</body>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- at end so website loads first, then these big files-->
-<!--	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
 	<script src="vendors/js/jquery.waypoints.min.js"></script>
 	<script src="resources/js/script.js"></script>
-	<!--<script src="http://maps.google.com/maps/api/js"></script>
-  	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC13r5nttQWTaZZ-LyEYW14VzmKzdQccMA&callback=initMap"
-  	type="text/javascript"></script>-->
-	
-
-	<!--<script src="resources/js/gmaps.js"></script>-->
-
 </html>
 
 <!--
