@@ -21,7 +21,7 @@ request.onload = function() {
 
 function createCommentEl( response ) {
 	let user = document.createElement( 'a' );
-	user.setAttribute( 'href', response.user.url );
+	user.setAttribute( 'href', response.user.url );		
 	user.classList.add( 'user' );
 
 /*	let userAvatar = document.createElement( 'img' );
@@ -57,7 +57,7 @@ request.send();
 
 <div class="github-comments">
 	<h2>Leave an 'ism'</h2>
-	<ul id="gh-comments-list"></ul>
+	<ol id="gh-comments-list"></ol>
 	<p id="no-comments-found">If you are interested in adding to the retry of Tav 'isms' or helping other become fluent.</p>
 	<p id="leave-a-comment">Leave a a fluency here. <a href="https://github.com/mediasres00/mediasres00.github.io/issues/{{ page.comments_id }}">Tavism Ticket</a>. 'isms' and Fluency's appear on this page instantly.</p>
 </div>
