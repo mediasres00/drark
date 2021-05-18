@@ -47,17 +47,76 @@
 			</div>
 		</header>
 		<section class="section-features js--section-features" id="features"> <!-- this is an anchor with food delivery-->
-      		<section>
-	<div class="row">
-		<h2>Take the Quiz in the browser<br/>or <a href="https://forms.gle/ckfhYZD2dPZExJbQ8">here</a></h2>
-	</div>
-</section>
-<section class="section-features js--section-features">
-	<div class="row">
-		<div class="col span-1-of-1 box">
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDNvBZSwzsV5Oi7K84HEqKzt79ZUEKHEdAbCD6fFWjMT3yOw/viewform?embedded=true" width="640" height="560" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      		<section id="comments">
+		<div class="row">
+			<div class="col span-1-of-1 box">
+				
+				<script>
+const GH_API_URL = 'https://api.github.com/repos/mediasres00/mediasres00.github.io/issues/7/comments?client_id=&client_secret=';
+
+let request = new XMLHttpRequest();
+request.open( 'GET', GH_API_URL, true );
+request.onload = function() {
+	if ( this.status >= 200 && this.status < 400 ) {
+		let response = JSON.parse( this.response );
+
+		for ( var i = 0; i < response.length; i++ ) {
+			document.getElementById( 'gh-comments-list' ).appendChild( createCommentEl( response[ i ] ) );
+		}
+
+		if ( 0 === response.length ) {
+			document.getElementById( 'no-comments-found' ).style.display = 'block';
+		}
+	} else {
+		console.error( this );
+	}
+};
+
+function createCommentEl( response ) {
+	let user = document.createElement( 'a' );
+	user.setAttribute( 'href', response.user.url );		
+	user.classList.add( 'user' );
+
+/*	let userAvatar = document.createElement( 'img' );
+	userAvatar.classList.add( 'avatar' );
+	userAvatar.setAttribute( 'src', response.user.avatar_url );
+
+	user.appendChild( userAvatar );*/
+
+	let commentLink = document.createElement( 'a' );
+	commentLink.setAttribute( 'href', response.html_url );
+	commentLink.classList.add( 'comment-url' );
+	commentLink.innerHTML = '#' + response.id + ' - ' + response.created_at;
+
+	let commentContents = document.createElement( 'div' );
+	commentContents.classList.add( 'comment-content' );
+	commentContents.innerHTML = response.body;
+
+	let comment = document.createElement( 'li' );
+	comment.setAttribute( 'data-created', response.created_at );
+	comment.setAttribute( 'data-author-avatar', response.user.avatar_url );
+	comment.setAttribute( 'data-user-url', response.user.url );
+
+	comment.appendChild( user );
+	comment.appendChild( commentContents );
+	comment.appendChild( commentLink );
+
+	return comment;
+}
+request.send();
+</script>
+
+<hr>
+
+<div class="github-comments">
+	<h2>Leave an 'ism'</h2>
+	<ol id="gh-comments-list"></ol>
+	<p id="no-comments-found">If you are interested in adding to the retry of Tav 'isms' or helping other become fluent.</p>
+	<p id="leave-a-comment">Leave a a fluency here. <a href="https://github.com/mediasres00/mediasres00.github.io/issues/7">Tavism Ticket</a>. 'isms' and Fluency's appear on this page instantly.</p>
+</div>
+				
+			</div>
 		</div>
-	</div>
 </section>
 
     	</section> 

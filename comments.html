@@ -1,0 +1,13 @@
+---
+layout: smaller
+comments_id: 7
+---
+<section id="comments">
+		<div class="row">
+			<div class="col span-1-of-1 box">
+				{% if page.comments_id %}
+				{% include comments.html %}
+				{% endif %}
+			</div>
+		</div>
+</section>
